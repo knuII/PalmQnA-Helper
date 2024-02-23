@@ -13,7 +13,7 @@ load_dotenv()  # take environment variables from .env (especially openai api key
 llm = GooglePalm(google_api_key=os.environ["GOOGLE_API_KEY"], temperature=0.1)
 # # Initialize instructor embeddings using the Hugging Face model
 instructor_embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-large")
-vectordb_file_path = "D:\Downloads\Malhar\Class Work Software\PythonProjects\QnA_PaLM_Bot\Faiss_index"
+vectordb_file_path = "path_to_vectordb"
 
 def create_vector_db():
     # Load data from FAQ sheet
